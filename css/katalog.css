@@ -1,0 +1,80 @@
+/* Style untuk navbar */
+.navbar {
+  /* warna pada navbar */
+  background-color: #f1a3bc;
+  /* font */
+  /* Menyelaraskan elemen secara vertikal di tengah */
+  align-items: center;
+  /* Menyelaraskan elemen secara horizongtal di tengah */
+  justify-content: center;
+  /* padding */
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-family: "Roboto Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  /* Memastikan brand lebar dan penuh */
+  width: 100%;
+}
+
+/* Untuk search form */
+.search-form {
+  /* lebar dan penuh */
+  width: 100%;
+  /* batas maksimal lebar */
+  max-width: 600px;
+  /* memposisikan ditengah */
+  margin: auto;
+}
+
+/* style untuk elemen kartu */
+.card {
+  /* lebar kartu */
+  width: 180px;
+  padding: 0px;
+  /* batas garis hitam */
+  border: 1px solid #000000;
+  /* membulatkan sudut kartu */
+  border-radius: 8px;
+}
+
+/* Menghapus margin bawah pada card terakhir */
+.card:last-child {
+  margin-bottom: 0;
+}
+
+/* style untuk heading */
+h5 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* style untuk elemen link */
+a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Responsive breadcrumbs */
+@media (max-width: 768px) {
+  .breadcrumb {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .breadcrumb-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .breadcrumb-item::after {
+    content: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .breadcrumb {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

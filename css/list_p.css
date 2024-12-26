@@ -1,0 +1,82 @@
+* {
+  /* menghapus margin bawaan */
+  margin: 0;
+  /* menghapus padding bawaan */
+  padding: 0;
+  /* memastikan padding dan border termasuk dalam ukuran elemen */
+  box-sizing: border-box;
+}
+
+.navbar {
+  /* warna navbar */
+  background-color: #f1a3bc;
+  /* font */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* menggunakan flexbox untuk tata letak elemen di navbar */
+  display: flex;
+  /* menyelaraskan elemen secara vertikal tengah */
+  align-items: center;
+  /* menyelaraskan elemen secara horizontal tengah */
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+.menu {
+  /* menyusun item menu secara horizontal */
+  display: flex;
+}
+
+.menu a {
+  /* warna teks hitam */
+  color: #000;
+  /* memberi jarak antar item menu */
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  /* menyelaraskan teks ditengah */
+  text-align: center;
+  /* memastikan elemen brand menempati lebar penuh */
+  width: 100%;
+  /* membuat judul berada di tengah */
+  position: absolute;
+}
+
+nav .title {
+  /* uk font untuk judul */
+  font-size: 24px;
+  /* menyelaraskan teks di tengah */
+  text-align: center;
+  /* memberikan jarak antar huruf */
+  letter-spacing: 1px;
+  /* menempatkan posisi ditengah horizontal */
+  left: 50%;
+  /* menyesuaikan posisi ditengah secara sempurna */
+  transform: translateX(-50%);
+}
+
+/* Navbar adjustments for dropdown and login */
+.navbar .dropdown {
+  /* menghapus margin kiri pada elemen dropdown */
+  margin-left: 0;
+}
+
+.navbar .ms-auto {
+  /* Menghapus margin kanan pada elemen dengan kelas ms-auto */
+  margin-right: 0;
+}
+
+.icon {
+  /* uk font ikon */
+  font-size: 20px;
+  /* warna font ikon */
+  color: #333;
+}
+
+.icon:hover {
+  /* mengubah warna ikon saat ditekan/disentuh */
+  color: blue;
+  /* mengubah kursor menjadi pointer untuk menunjukkan ikon dapat diklik */
+  cursor: pointer;
+}
+
