@@ -35,7 +35,7 @@
 <body>
   <div class="splash-screen">
     <!-- Logo -->
-    <img src="image/logo.jpeg" alt="Logo" class="splash-logo">
+    <img src="image/logo.png" alt="Logo" class="splash-logo">
     <!-- Teks -->
     <p class="splash-text">Selamat Datang di Website Kami</p>
     <script>
