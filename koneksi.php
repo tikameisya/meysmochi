@@ -1,7 +1,7 @@
 <?php
 
 //set this true if its local dev
-$localdev = true; //kena bila handak local dev di vs code set ini jadi true
+$localdev = false; 
 
 $_SERVER = "localhost";
 $_user = $localdev ? "root" : "meys_mochi";
