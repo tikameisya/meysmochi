@@ -25,6 +25,10 @@ if (!$result) {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../css/list_p.css">
+    <!-- google fonts noto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         .table {
             color: pink;
@@ -44,29 +48,36 @@ if (!$result) {
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
         <div class="container-fluid">
-        <div class="menu">
-            <!-- menu navbar -->
-            <a href="../home.php">Home</a>
-            <a href="../register.php">Register</a>
-            <a href="https://wa.me/6281234567890" target="_blank">Contact</a>
-        </div>
-            <!-- brand atau judul navbar -->
-            <a class="navbar-brand text-dark"><span class="title">M E Y ' S M O C H I</span></a>
-            <!-- button toggler untuk layar kecil -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fs-2 fw-bold" href="../home.php">Mey's Mochi</a>
+            <button class="navbar-toggler z-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <!-- logout button -->
-                    <li class="nav-item">
-                        <a href="../logout.php" class="nav-link">
-                            <i class="fas fa-sign-out-alt icon" title="Logout"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item z-1">
+                            <a class="nav-link" href="../home.php">Home</a>
+                        </li>
+                        <li class="nav-item z-1">
+                            <a class="nav-link" href="../katalog.php">Katalog</a>
+                        </li>
+                        <li class="nav-item z-1">
+                            <a class="nav-link" href="https://wa.me/6285845691423" target="_blank">Contact</a>
+                        </li>
+                        <!-- logout button -->
+                        <li class="nav-item">
+                            <a href="../logout.php" class="nav-link">
+                                <i class="fas fa-sign-out-alt icon" title="Logout"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>

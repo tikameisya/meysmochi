@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: "Roboto Condensed", serif;
+  font-style: normal;
+}
+
 .navbar {
   /* warna navbar */
   background-color: #f1a3bc;
@@ -34,6 +39,8 @@
 }
 
 .navbar-brand {
+  /* style */
+  font-family: "Roboto Condensed", serif;
   /* menyelaraskan teks ditengah */
   text-align: center;
   /* memastikan elemen brand menempati lebar penuh */
