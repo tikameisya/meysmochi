@@ -77,7 +77,7 @@ if (!$result) {
 
   <div class="container mt-5">
     <div class="align-items-center">
-      <div class="row">
+      <div class="row justify-content-center">
         <?php
         // Loop untuk menampilkan setiap produk dalam card
         while ($row = mysqli_fetch_assoc($result)) {
