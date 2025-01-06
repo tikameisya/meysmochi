@@ -88,7 +88,7 @@ if (!$result) {
           $harga_format = number_format($harga, 0, ',', '.'); // Format harga
 
           echo "
-            <div class='col-md-3'>
+            <div class='col-md-3 col-10 d-flex justify-content-center'>
                 <div class='card mb-4'>
                     <img src='admin/upload_foto/$gambar' class='card-img-top' alt='$nama'>
                     <div class='card-body text-center'>
