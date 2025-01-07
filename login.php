@@ -40,7 +40,7 @@
         <ul class="navbar-nav ms-auto">
           <!-- Item menu logout, mengarah ke logout.php -->
           <li class="nav-item">
-            <a class="nav-link text-dark" href="logout.php">Logout</a>
+            <a class="nav-link text-dark" href="home.php">Home</a>
           </li>
         </ul>
       </div>
